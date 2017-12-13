@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afflatus.Plugins", "Afflatus.Plugins.csproj", "{1F08E9D9-4987-27EB-D228-6EA67DB07A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afflatus.Editor.Plugins", "Afflatus.Editor.Plugins.csproj", "{5A4BA180-94B4-2451-E738-FD973ECDA3C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F08E9D9-4987-27EB-D228-6EA67DB07A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F08E9D9-4987-27EB-D228-6EA67DB07A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F08E9D9-4987-27EB-D228-6EA67DB07A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F08E9D9-4987-27EB-D228-6EA67DB07A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4BA180-94B4-2451-E738-FD973ECDA3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4BA180-94B4-2451-E738-FD973ECDA3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4BA180-94B4-2451-E738-FD973ECDA3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4BA180-94B4-2451-E738-FD973ECDA3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
