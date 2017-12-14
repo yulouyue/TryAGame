@@ -9,8 +9,18 @@ namespace Afflatus
     /// </summary>
     public class BaseItemData : BaseObjectData
     {
-
+        
         public override void reset()
+        {
+            //TODO
+        }
+
+        public override void init()
+        {
+            //TODO
+        }
+
+        public override void unInit()
         {
             //TODO
         }
