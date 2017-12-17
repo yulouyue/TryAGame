@@ -8,6 +8,7 @@ namespace Afflatus
     /// </summary>
     public class BaseActor : BaseObject
     {
+
         public override void setData(BaseObjectData data)
         {
             if (data is BaseActorData)
@@ -21,5 +22,33 @@ namespace Afflatus
 
         }
 
+        private void Start()
+        {
+            if(_data && ((BaseActorData)_data).moveState== ActorMoveState.IDLE)
+            {
+                idle();
+            }
+        }
+
+        public virtual void idle()
+        {
+
+        }
+        public virtual void walk()
+        {
+
+        }
+        public virtual void run()
+        {
+
+        }
+        public virtual void jump()
+        {
+
+        }
+        public virtual void die()
+        {
+
+        }
     }
 }

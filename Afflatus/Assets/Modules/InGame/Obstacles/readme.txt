@@ -1,0 +1,3 @@
+obstacle可能被破坏，因此要实现damaged方法
+拥有生命值
+特殊的obstacle还可以移动
