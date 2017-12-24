@@ -33,7 +33,7 @@
 
                     if (FindObjectsOfType(typeof(T)).Length > 1)
                     {
-                        Debug.LogError("CreateInstance: More than 1 monobehaviour singleton found. Check & Reopening the scene might fix it.");
+                        LogUtil.Error("CreateInstance: More than 1 monobehaviour singleton found. Check & Reopening the scene might fix it.");
                     }
 
                     if (_instance == null)
@@ -73,7 +73,7 @@
                 {
                     _instance = this;
                     DontDestroyOnLoad(gameObject);
-                    Debug.Log(typeof(T).ToString() + "awake init");
+                    LogUtil.Debug(typeof(T).ToString() + "awake init");
 
                 }
             }

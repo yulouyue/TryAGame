@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using TrueSync;
 namespace Afflatus
 {
     /// <summary>
@@ -11,12 +12,15 @@ namespace Afflatus
     {
         [Header("数值设定")]
         public float MAX_MOVE_SPEED;
+        public float MAX_TURN_SPEED;
         public float MAX_HEALTH;
 
 
         [Header("角色当前状态")]
-        public float health;
+        public FP health;
         public ActorMoveState moveState = ActorMoveState.IDLE;
+        public TSVector movingDirection = TSVector.zero;
+        public TSVector facingDirection = TSVector.forward;
 
         public override void reset()
         {
@@ -27,6 +31,9 @@ namespace Afflatus
         {
             //TODO
             moveState = ActorMoveState.IDLE;
+            movingDirection = TSVector.zero;
+            facingDirection = TSVector.forward;
+            health = MAX_HEALTH;
         }
 
         public override void unInit()

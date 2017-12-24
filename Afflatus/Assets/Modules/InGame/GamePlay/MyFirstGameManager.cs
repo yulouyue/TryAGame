@@ -18,7 +18,7 @@ namespace Afflatus
         {
             tsManager = GetComponent<TrueSyncManager>();
             if (tsManager == null)
-                Debug.LogError("没有 TrueSyncManager");
+                LogUtil.Error("没有 TrueSyncManager");
         }
 
         public void onMyGamePrepare()
