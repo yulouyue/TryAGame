@@ -164,13 +164,7 @@ namespace Afflatus
             StepRunning();
         }
 
-
-
-
-        public override void OnGamePaused()
-        {
-            StepRunning();//temp
-        }
+        
 
         public void OnSyncedCollisionEnter(TSCollision other)
         {
